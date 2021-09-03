@@ -1,0 +1,14 @@
+services:
+  # A Docker web service
+  - type: web
+    name: twingate-connector
+    env: docker
+    envVars:
+      - key: TENANT_URL
+        sync: false
+      - key: ACCESS_TOKEN
+        sync: false
+      - key: REFRESH_TOKEN
+        sync: false
+      - key: TWINGATE_LABEL_HOSTNAME
+        sync: false
